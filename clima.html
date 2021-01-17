@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/clima.css">
+    
+</head>
+<body>
+    
+        <section class="card">
+            <section class="up">
+                <h1>
+                    Domingo
+                </h1>
+                <h3>
+                    29 Septiembre
+                </h3>
+                <img src="img/sun.png" alt="Soleado">
+                <h2>
+                    28°
+                </h2>
+            </section>
+            
+            <section class="bottom">
+                <div>
+                    <p>9:30</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>20°</p>
+                </div>
+                <div>
+                    <p>16:30</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>30°</p>
+                </div>
+                <div>
+                    <p>10:20</p>
+                    <img src="img/rain.png" alt="lluvioso">
+                    <p>10°</p>
+                </div>
+            </section>
+        </section>
+    
+        <section class="card card-secondary">
+            <section class="up">
+                    <h1>
+                        Lunes
+                    </h1>
+                    <h3>
+                        30 Septiembre
+                    </h3>
+                    <img src="img/sun.png" alt="Soleado">
+                    <h2>
+                        26°
+                    </h2>
+            </section>
+    
+            <section class="bottom">
+                <div>
+                    <p>08:00</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>22°</p>
+                </div>
+                <div>
+                    <p>14:00</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>27°</p>
+                </div>
+                <div>
+                    <p>20:00</p>
+                    <img src="img/rain.png" alt="lluvioso">
+                    <p>14°</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="card card-tertiary">
+            <section class="up">
+                    <h1>
+                        Lunes
+                    </h1>
+                    <h3>
+                        30 Septiembre
+                    </h3>
+                    <img src="img/rain.png" alt="lluvioso">
+                    <h2>
+                        26°
+                    </h2>
+            </section>
+    
+            <section class="bottom">
+                <div>
+                    <p>08:00</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>22°</p>
+                </div>
+                <div>
+                    <p>14:00</p>
+                    <img src="img/sun.png" alt="Soleado">
+                    <p>27°</p>
+                </div>
+                <div>
+                    <p>20:00</p>
+                    <img src="img/rain.png" alt="lluvioso">
+                    <p>14°</p>
+                </div>
+            </section>
+        </section>
+
+        <button class="btn">Color de fondo</button>
+        <script>
+        const btn = document.querySelector('button');
+
+        function random(number) {
+            return Math.floor(Math.random() * (number+1));
+        }
+        
+        btn.onclick = function() {
+            const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+        </script>
+</body>
+</html>
